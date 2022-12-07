@@ -12,7 +12,8 @@
   }
 
   .nav {
-    background-color: rgba(255, 255, 255, 0.38);
+    // background: rgba(75, 57, 239, 0.1);
+    background: rgba(255, 255, 255, 0.38);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
@@ -61,17 +62,22 @@
       .formBtn {
         width: 80%;
         height: 5vh;
-        background-color: lightgreen;
+        background-color: rgb(144, 216, 238);
         display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
         border: 1px solid rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+
+        option {
+          height: 5vh;
+        }
       }
 
       select.formBtn {
-        background-color: lightsalmon;
+        background-color: rgb(222, 190, 234);
       }
     }
   }

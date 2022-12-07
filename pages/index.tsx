@@ -1,20 +1,17 @@
 import Head from "next/head";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import testResults from "../src/tempData/testResultsExample.json";
 import { useTestsResultsContext } from "../context/testsResults";
 import TestResults from "../src/components/TestResults";
 import ParticlesBackground from "../src/components/ParticlesBackground";
 
 export default function Home() {
-  const [testStatus, setTestStatus] = useState<string | null>(null);
+  const [currentTestNumber, setCurrentTestNumber] = useState(1);
   const { testsResults, setTestsResults } = useTestsResultsContext();
 
   function startTest(): void {
-    setTestsResults([...testsResults, testResults]);
-    setTestStatus("RUNNING");
-    setTimeout(() => {
-      setTestStatus("DONE");
-    }, 2000);
+    setTestsResults([...testsResults, {...testResults, id: `Complete Demo Test ${currentTestNumber}`, testName: `Complete Demo Test ${currentTestNumber}`}]);
+    setCurrentTestNumber(currentTestNumber+1);
   }
 
   return (
