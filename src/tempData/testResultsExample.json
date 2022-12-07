@@ -1,0 +1,19 @@
+{
+  "id": "589c94bb-8f06-43eb-b64d-5fcf7fff6e88",
+  "testName": "completeDemoTest",
+  "result": "PASSED",
+  "executionStatus": "DONE",
+  "steps": [
+    { "id": "CreatePatient1Step", "result": "DONE", "body": "" },
+    { "id": "AssertCreatePatient1Step", "result": "PASSED", "body": "" },
+    { "id": "CreatePatient2Step", "result": "DONE", "body": "" },
+    { "id": "AssertCreatePatient2Step", "result": "PASSED", "body": "" },
+    {
+      "id": "XRefPatientStep",
+      "result": "DONE",
+      "body": "[{\"object\":{\"birthDate\":\"1999-09-01\",\"gender\":\"Male\",\"identifier\":{\"system\":\"urn:oid:1.1.1.1\",\"value\":\"org-test\"},\"name\":{\"family\":\"Orwel\",\"given\":\"Jhon\"}},\"resourceType\":\"Patient\"},{\"object\":{\"birthDate\":\"1999-09-01\",\"gender\":\"Male\",\"identifier\":{\"system\":\"urn:oid:1.1.1.2\",\"value\":\"org-test\"},\"name\":{\"family\":\"Orwel\",\"given\":\"Jhon\"}},\"resourceType\":\"Patient\"}]"
+    },
+    { "id": "AssertXRefPatientStep", "result": "PASSED", "body": "" },
+    { "id": "AssertXRefPatientBodyStep", "result": "PASSED", "body": "" }
+  ]
+}

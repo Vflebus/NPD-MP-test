@@ -1,0 +1,4 @@
+- Déjà connecté, accès à un profil (codé en dur ?)
+    - tes
+- Choix du SUT
+- Lancement du test et récupération des données (Commencer avec des données en dur et sans requêtes sur le back)

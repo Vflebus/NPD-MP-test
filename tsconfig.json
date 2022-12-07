@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Particles/config/particles-config.js", "src/components/Particles/config/particles-config.js", "src/components/ParticlesBackground.js", "src/components/ParticlesBackground.js"],
   "exclude": ["node_modules"]
 }

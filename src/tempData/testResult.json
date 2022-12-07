@@ -1,0 +1,14 @@
+{
+    "id": "testId",
+    "testName": "test name",
+    "result": "test result",
+    "executionStatus": "PENDING or RUNNING or DONE (PENDING [102] not yet accepted by Maestro, RUNNING [202] Maestro start the test, DONE [200] The test is finished", 
+    "steps": [
+      {
+       "id": "step id",
+       "result": "Step Result",
+       "description": "step description",
+       "body": "Step Body (could be null)"
+      }
+     ]
+}
