@@ -1,12 +1,4 @@
-import { type } from "os";
-import React, {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  Dispatch,
-  SetStateAction,
-} from "react";
+import React, { createContext, useContext, useState, Dispatch, SetStateAction } from "react";
 import TestResult from "../src/types/TestsResult";
 
 export type TestsResultsContextProps = {
@@ -14,29 +6,10 @@ export type TestsResultsContextProps = {
   setTestsResults: Dispatch<SetStateAction<TestResult[]>>;
 };
 
-const Context = createContext<TestsResultsContextProps>(
-  {} as TestsResultsContextProps
-);
+const Context = createContext<TestsResultsContextProps>({} as TestsResultsContextProps);
 
-export function TestResultProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export function TestResultProvider({ children }: { children: React.ReactNode; }) {
   const [testsResults, setTestsResults] = useState<TestResult[]>([]);
-
-  useEffect(() => {
-    let localFavs = localStorage.getItem("testsResults");
-    if (localFavs !== null) {
-      if (JSON.parse(localFavs)) {
-        setTestsResults(JSON.parse(localFavs));
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("testsResults", JSON.stringify(testsResults));
-  }, [testsResults]);
 
   return (
     <Context.Provider value={{ testsResults, setTestsResults }}>
