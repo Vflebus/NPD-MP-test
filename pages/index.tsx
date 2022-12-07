@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import testResults from "../src/tempData/testResultsExample.json";
-import { useTestsResultsContext } from "../context/testsResults";
+import { useTestsResultsContext } from "../context/testsResultsContext";
 import TestResults from "../src/components/TestResults";
 import ParticlesBackground from "../src/components/ParticlesBackground";
 

@@ -4,16 +4,17 @@
   "result": "PASSED",
   "executionStatus": "DONE",
   "steps": [
-    { "id": "CreatePatient1Step", "result": "DONE", "body": "" },
-    { "id": "AssertCreatePatient1Step", "result": "PASSED", "body": "" },
-    { "id": "CreatePatient2Step", "result": "DONE", "body": "" },
-    { "id": "AssertCreatePatient2Step", "result": "PASSED", "body": "" },
+    { "id": "CreatePatient1Step", "description": "Attempting to create a new patient", "result": "DONE", "body": "" },
+    { "id": "AssertCreatePatient1Step", "description": "Verifying if patient has been created", "result": "PASSED", "body": "" },
+    { "id": "CreatePatient2Step", "description": "Attempting to create a second new patient", "result": "DONE", "body": "" },
+    { "id": "AssertCreatePatient2Step", "description": "Verifying if second patient has been created", "result": "PASSED", "body": "" },
     {
       "id": "XRefPatientStep",
+      "description": "Attempting to retrieve patients",
       "result": "DONE",
       "body": "[{\"object\":{\"birthDate\":\"1999-09-01\",\"gender\":\"Male\",\"identifier\":{\"system\":\"urn:oid:1.1.1.1\",\"value\":\"org-test\"},\"name\":{\"family\":\"Orwel\",\"given\":\"Jhon\"}},\"resourceType\":\"Patient\"},{\"object\":{\"birthDate\":\"1999-09-01\",\"gender\":\"Male\",\"identifier\":{\"system\":\"urn:oid:1.1.1.2\",\"value\":\"org-test\"},\"name\":{\"family\":\"Orwel\",\"given\":\"Jhon\"}},\"resourceType\":\"Patient\"}]"
     },
-    { "id": "AssertXRefPatientStep", "result": "PASSED", "body": "" },
-    { "id": "AssertXRefPatientBodyStep", "result": "PASSED", "body": "" }
+    { "id": "AssertXRefPatientStep", "description": "", "result": "PASSED", "body": "" },
+    { "id": "AssertXRefPatientBodyStep", "description": "", "result": "PASSED", "body": "" }
   ]
 }
